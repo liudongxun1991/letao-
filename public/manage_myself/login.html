@@ -9,6 +9,10 @@
     <!-- 引入bootstrap -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/base.css">
+    <!-- 引入正则校验插件 -->
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+    <!-- 引入进度条插件 不是bootstrap的 它的是静态的 -->
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
     <!-- 引入自己的css -->
     <link rel="stylesheet" href="./css/login.css">
 </head>
@@ -27,18 +31,18 @@
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-3 control-label">用户名</label>
                                 <div class="col-sm-9">
-                                    <input name="username" type="text" class="form-control" id="inputEmail3" placeholder="请输入用户名">
+                                    <input name="username" type="text" class="form-control" id="inputEmail1" placeholder="请输入用户名">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword3" class="col-sm-3 control-label">密码</label>
                                 <div class="col-sm-9">
-                                    <input name="password" type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+                                    <input name="password" type="password" class="form-control" id="inputPassword2" placeholder="请输入密码">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-6">
-                                    <button type="submit" class="btn btn-default">重置</button>
+                                    <button type="reset" class="btn btn-default">重置</button>
                                     <button type="submit" class="btn btn-default btn-primary pull-right">登录</button>
                                 </div>
                             </div>
@@ -54,6 +58,9 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <!-- 引入bootstrap -->
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+    <!-- 引入进度条插件 -->
+    <script src="./lib/nprogress/nprogress.js"></script>
     <script src="./js/login.js"></script>
 </body>
 
