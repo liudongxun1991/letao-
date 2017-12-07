@@ -1,0 +1,17 @@
+body {
+    /* 没有高度 做了优化 照样可以设置背景色 */
+    background-color: #222d32;
+}
+
+.container .panel {
+    margin: 150px auto;
+}
+
+.container .panel-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .panel-title h4 {
+    font-size: 18px;
+}
