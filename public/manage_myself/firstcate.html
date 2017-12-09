@@ -62,7 +62,7 @@
         <!-- 右边主体 -->
         <div class="main-right">
             <div class="top clearfix">
-                <a href="" class="pull-left" >
+                <a href="" class="pull-left">
                     <span class="glyphicon glyphicon-tasks"></span>
                 </a>
                 <a href="" class="pull-right" data-toggle="modal" data-target=".bs-example-modal-sm">
@@ -76,14 +76,30 @@
                             <a href="#">管理系统</a>
                         </li>
                         <li>
-                            <a href="#">首页</a>
+                            <a href="#">分类管理</a>
+                        </li>
+                        <li>
+                            <a href="#">一级分类</a>
                         </li>
                     </ol>
                 </div>
                 <!-- 图表部分 -->
-                <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-                <div id="maintubiao" style="width: 600px;height:400px;" class="pull-left"></div>
-                <div id="maintubiao2" style="width: 500px;height:400px;" class="pull-right"></div>
+                <!-- 按钮部分和表格 -->
+                <button  class="btn btn-btn-default mb_30" >分类管理</button>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>分类名称</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>南士馆</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <!-- 模态框 -->
@@ -98,7 +114,7 @@
         </div> -->
 
         <!-- 静态的对比 改样式 -->
-        
+
         <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm " role="document">
                 <div class="modal-content">
@@ -109,7 +125,8 @@
                         <h4 class="modal-title">温馨提示</h4>
                     </div>
                     <div class="modal-body">
-                        <p><span class="glyphicon glyphicon-info-sign"></span> 你确定要离开登陆页面吗？</p>
+                        <p>
+                            <span class="glyphicon glyphicon-info-sign"></span> 你确定要离开登陆页面吗？</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -133,3 +150,5 @@
 <script src="./lib/echarts/echarts.min.js"></script>
 <!-- 引入公共的js -->
 <script src="./js/common.js"></script>
+<!-- 自己的js -->
+<script src="./js/firstcate.js"></script>
