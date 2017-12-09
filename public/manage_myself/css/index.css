@@ -82,14 +82,16 @@
 /* 主体右边部分 */
 
 .main-right {
-    background-color: #3c8dbc;
+    
     margin-left: 180px;
     height: 100%;
+    background-color: white;
 }
 
 .main-right .top {
     height: 50px;
     padding: 15px 15px;
+    background-color: #3c8dbc;
 }
 
 .main-right .top span {
