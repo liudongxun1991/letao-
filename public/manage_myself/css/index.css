@@ -1,0 +1,109 @@
+#main {
+    height: 100%;
+    position: relative;
+}
+
+
+/* 主体左边部分 */
+
+#main .main-left {
+    width: 180px;
+    height: 100%;
+    background-color: #222d32;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#main .main-left .logo {
+    background-color: #367fa9;
+    height: 50px;
+    text-align: center;
+}
+
+#main .main-left .logo a {
+    /* 给行内没用，就给上面的text-align了 */
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#main .main-left .slide {
+    padding: 30px 20px;
+}
+
+#main .main-left .slide a {}
+
+#main .main-left .slide a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#main .main-left .slide a span {
+    color: white;
+    font-size: 12px;
+}
+
+.main-left .content {}
+
+.main-left .content li {}
+
+.main-left .content li {
+    border: 4px solid transparent;
+}
+
+.main-left .content li.active {
+    border-left-color: yellowgreen;
+    background-color: #1d1f21;
+}
+
+.main-left .content li.active a {
+    color: white;
+}
+
+.main-left .content li a {
+    line-height: 40px;
+    color: gray;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.main-left .content ul ol li a {
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 50px;
+}
+
+
+/* 主体右边部分 */
+
+.main-right {
+    background-color: #3c8dbc;
+    margin-left: 180px;
+    height: 100%;
+}
+
+.main-right .top {
+    height: 50px;
+    padding: 15px 15px;
+}
+
+.main-right .top span {
+    font-size: 16px;
+    color: white;
+}
+
+
+/* 没有类名时候 */
+.main-right.current{
+    margin-left: 0px;
+
+}
+/* main-bottom */
+.main-bottom{
+    padding: 20px;
+}

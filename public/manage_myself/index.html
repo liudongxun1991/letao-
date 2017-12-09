@@ -5,11 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>首页</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 引入自己的css -->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <h2>欢迎你来了</h2>
+    <!-- 所有内容 -->
+    <div id="main">
+        <!-- 侧边栏 -->
+        <div class="main-left">
+            <div class="logo">
+                <a href="./index.html">HEIMA</a>
+            </div>
+            <div class="slide">
+                <a href="">
+                    <img src="./images/default.png" alt="">
+                    <span>超级管理员</span>
+                </a>
+            </div>
+            <!-- 分三层 不然总是出错 -->
+            <div class="content">
+                <ul>
+                    <li class="active">
+                        <a href="">
+                            <i class="glyphicon glyphicon-user"></i>
+                            <span>用户管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="glyphicon glyphicon-list"></i>
+                            <span>用户管理</span>
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="javascript:void(0)">一级分类</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">二级分类</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="glyphicon glyphicon-tag"></i>
+                            <span>用户管理</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 右边主体 -->
+        <div class="main-right">
+            <div class="top clearfix">
+                <a href="" class="pull-left" >
+                    <span class="glyphicon glyphicon-tasks"></span>
+                </a>
+                <a href="" class="pull-right" data-toggle="modal" data-target=".bs-example-modal-sm">
+                    <span class="glyphicon glyphicon-share glyphicon-goout"></span>
+                </a>
+            </div>
+            <div class="main-bottom clearfix">
+                <div class="intro">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">管理系统</a>
+                        </li>
+                        <li>
+                            <a href="#">首页</a>
+                        </li>
+                    </ol>
+                </div>
+                <!-- 图表部分 -->
+                <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+                <div id="maintubiao" style="width: 600px;height:400px;" class="pull-left"></div>
+                <div id="maintubiao2" style="width: 500px;height:400px;" class="pull-right"></div>
+            </div>
+        </div>
+        <!-- 模态框 -->
+        <!-- Small modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    ...
+                </div>
+            </div>
+        </div> -->
+
+        <!-- 静态的对比 改样式 -->
+        
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">温馨提示</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p><span class="glyphicon glyphicon-info-sign"></span> 你确定要离开登陆页面吗？</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="submit" class="btn btn-primary">确认</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </div>
 </body>
 
 </html>
+<!-- 引入jquery在bootstrap之前  -->
+<script src="./lib/jquery/jquery.min.js"></script>
+<!-- 引入bootstrap -->
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<!-- 引入echarts图表 -->
+<script src="./lib/echarts/echarts.min.js"></script>
+<!-- 引入公共的js -->
+<script src="./js/common.js"></script>

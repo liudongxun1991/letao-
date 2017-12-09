@@ -103,12 +103,13 @@ $(function () {
 
     });
     // 功能三 为表单绑定点击事件
-    $('button[type=reset]').onclick(function () {
+    $('button[type=reset]').click(function () {
         // 首先获取对象
         var validator = $("form").data('bootstrapValidator');
         validator.resetForm(); //重置表单，并且会隐藏所有的错误提示和图标
     })
 })
+
 
 
 /*
