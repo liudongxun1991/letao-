@@ -9,8 +9,10 @@
     <!-- 引入bootstrap -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/base.css">
-    <!-- 引入自己的css -->
+    <!-- 引入公共的css -->
     <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet" href="./css/firstcate.css">
 </head>
 
 <body>
@@ -85,7 +87,7 @@
                 </div>
                 <!-- 图表部分 -->
                 <!-- 按钮部分和表格 -->
-                <button  class="btn btn-btn-default mb_30" >分类管理</button>
+                <button class="btn btn-default mb_30" data-toggle="modal" data-target=".cate1-modal-sm">分类管理</button>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -100,21 +102,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <ul id="pagintor"></ul>
             </div>
         </div>
         <!-- 模态框 -->
-        <!-- Small modal -->
-        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
-        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-            <div class="modal-dialog modal-sm" role="document">
-                <div class="modal-content">
-                    ...
-                </div>
-            </div>
-        </div> -->
-
         <!-- 静态的对比 改样式 -->
-
         <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm " role="document">
                 <div class="modal-content">
@@ -138,6 +130,33 @@
             <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
+
+        <!-- 分类管理modal -->
+        <div class="modal fade cate1-modal-sm" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">添加分类</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" id="form">
+                            <input type="text" placeholder="请输入一级分类名称">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary">确认</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <!-- /.modal -->
     </div>
 </body>
 
@@ -148,6 +167,18 @@
 <script src="./lib/bootstrap/js/bootstrap.js"></script>
 <!-- 引入echarts图表 -->
 <script src="./lib/echarts/echarts.min.js"></script>
+<!-- 引入分页 -->
+<script src="./lib/bootstrap-paginator/bootstrap-paginator.js"></script>
+<!-- 引入模板 -->
+<script src="./lib/artTemplate/template.js"></script>
+<script id="firstTmp" type="text/html">
+    {{each rows}}
+    <tr>
+        <td scope="row">{{(page-1)* size+1 +$index}}</td>
+        <td>{{$value.categoryName}}}</td>
+    </tr>
+    {{/each}}
+</script>
 <!-- 引入公共的js -->
 <script src="./js/common.js"></script>
 <!-- 自己的js -->
