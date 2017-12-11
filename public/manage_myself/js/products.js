@@ -11,7 +11,7 @@ $(function () {
                 pageSize: myPageSize
             },
             success: function (backData) {
-                console.log(backData);
+                // console.log(backData);
                 $('tbody').html(template('productsTmp', backData));
                 // 调用分页插件
                 $("#pagintor").bootstrapPaginator({
@@ -56,7 +56,6 @@ $(function () {
     })
 
     //表单验证逻辑
-    /*
     $('form').bootstrapValidator({
         // 指定验证的input类型
         // ':hidden' 隐藏 ':not(:visible)' 不可见 需要删除
@@ -146,5 +145,19 @@ $(function () {
         e.preventDefault();
         // console.log('成功了');
     })
-    */
+    //产品新增模块
+    // 格式化表单 要有name属性
+    $('.btnAdd').click(function(){
+        $.ajax({
+            url : '/product/addProduct',
+            type: 'post',
+            data:$('form').serialize(),
+            success: function(backData){
+                console.log(backData);
+                if(backData.success ==true){
+                    $('.productsmodal').modal('hide');
+                }
+            }
+        })
+    })
 })

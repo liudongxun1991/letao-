@@ -2,8 +2,6 @@
     height: 100%;
     position: relative;
 }
-
-
 /* 主体左边部分 */
 
 #main .main-left {
@@ -99,11 +97,9 @@
     color: white;
 }
 
-
 /* 没有类名时候 */
 .main-right.current{
     margin-left: 0px;
-
 }
 /* main-bottom */
 .main-bottom{

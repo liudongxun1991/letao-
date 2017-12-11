@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <!-- 引入自己的css -->
     <link rel="stylesheet" href="./css/products.css">
 </head>
+
 <body>
     <!-- 所有内容 -->
     <div id="main">
@@ -126,7 +128,9 @@
                                     <div class="form-group">
                                         <input type="text" name="proName" class="form-control" placeholder="请输入商品名称">
                                     </div>
-                                    <textarea class="form-control" name="proDesc" rows="3" placeholder="请输入商品描述"></textarea>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="proDesc" rows="3" placeholder="请输入商品描述"></textarea>
+                                    </div>
                                     <div class="form-group">
                                         <input type="text" name="num" class="form-control" placeholder="请输入商品库存">
                                     </div>
@@ -150,7 +154,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                                <button type="submit" form="form" class="btn btn-primary">确定</button>
+                                <button type="submit" form="form" class="btn btn-primary btnAdd">确定</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -176,7 +180,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                        <button type="submit" class="btn btn-primary">确认</button>
+                        <button type="submit" class="btn btn-primary leave">确认</button>
                     </div>
                 </div>
                 <!-- /.modal-content -->
@@ -186,6 +190,7 @@
         <!-- /.modal -->
     </div>
 </body>
+
 </html>
 <!-- 引入jquery在bootstrap之前  -->
 <script src="./lib/jquery/jquery.min.js"></script>

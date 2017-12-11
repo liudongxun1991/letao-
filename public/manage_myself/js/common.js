@@ -22,7 +22,7 @@ $(function () {
     })
 
     // 模态框
-    $('.modal-content .modal-footer button[type="submit"]').click(function () {
+    $('.modal-content .modal-footer .leave').click(function () {
         // 关闭模态框
         $('.modal-content').modal('hide')
         $.ajax({
