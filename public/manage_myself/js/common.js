@@ -1,7 +1,6 @@
 /*
     都要用到判断 所以抽取
 */
-
 $(function () {
     // 首先就要判断用户是否登陆 强制打回 逻辑比较多
     $.ajax({
@@ -34,5 +33,9 @@ $(function () {
                 }
             }
         })
+    })
+    // 侧边栏的收展开
+    $('.content ul li:eq(1) a').click(function(){
+        $(this).siblings('ol').slideToggle();
     })
 })

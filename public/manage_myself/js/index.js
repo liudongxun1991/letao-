@@ -1,27 +1,6 @@
 $(function(){
-    // 首先就要判断用户是否登陆 强制打回 逻辑比较多
-    $.ajax({
-        url:'/employee/checkRootLogin',
-        type:'get',
-        success:function(backData){
-            console.log(backData);
-            // 每一个都要验证 抽取出来
-            if(backData.error == 400){
-                window.location.href = './login.html';
-            }
-        }
-    })
-
-    // 侧边栏的收展开 上下执行解析有时间关系
-    $('.main-right .glyphicon-tasks').click(function(){
-        $('.main-left').toggle();
-        $('.main-right').toggleClass('current');
-    })
-
-
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('maintubiao'));
-    
     // 指定图表的配置项和数据
     var option = {
         title: {
