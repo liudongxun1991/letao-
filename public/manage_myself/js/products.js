@@ -1,8 +1,8 @@
 $(function () {
+    // 定义变量 不要包裹在里面啊 兄弟
+    var myPageNum = 1;
+    var myPageSize = 5;
     function getData() {
-        // 定义变量
-        var myPageNum = 1;
-        var myPageSize = 5;
         $.ajax({
             url: '/product/queryProductDetailList',
             type: 'get',
@@ -56,7 +56,7 @@ $(function () {
     })
 
     //表单验证逻辑
-    /*
+
     $('form').bootstrapValidator({
         // 指定验证的input类型
         // ':hidden' 隐藏 ':not(:visible)' 不可见 需要删除
@@ -145,6 +145,20 @@ $(function () {
     }).on('success.form.bv', function (e) {
         e.preventDefault();
         // console.log('成功了');
+        //使用ajax提交逻辑
+        $.ajax({
+            url: '/product/addProduct',
+            type: 'post',
+            data: $('form').serialize(),
+            success: function (backData) {
+                console.log(backData);
+                if (backData.success) {
+                    $("#form").data('bootstrapValidator').resetForm();
+                    $('.productsmodal').modal('hide');
+                    getData();
+                }
+            }
+        })
     })
-    */
+
 })

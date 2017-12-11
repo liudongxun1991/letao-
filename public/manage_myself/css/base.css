@@ -20,7 +20,15 @@ ul,
 li {
     list-style: none;
 }
+.main-right.current{
+    margin-left: 0px;
+}
 
 .mb_30{
     margin-bottom: 30px;
+}
+
+.main-left .content li.active{
+    border-left-color: yellowgreen;
+    background-color: #1d1f21;
 }

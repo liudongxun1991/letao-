@@ -34,8 +34,6 @@
     padding: 30px 20px;
 }
 
-#main .main-left .slide a {}
-
 #main .main-left .slide a img {
     width: 50px;
     height: 50px;
@@ -47,15 +45,11 @@
     font-size: 12px;
 }
 
-.main-left .content {}
-
-.main-left .content li {}
-
 .main-left .content li {
     border: 4px solid transparent;
 }
 
-.main-left .content li.active {
+.main-left .content li.active>a{
     border-left-color: yellowgreen;
     background-color: #1d1f21;
 }
