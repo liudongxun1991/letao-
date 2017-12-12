@@ -1,0 +1,91 @@
+html,body{
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#layout{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.lt_header{
+    /* 都是用弹性布局 */
+    display: flex;
+    padding: 0 10px;
+    background-color: #006699;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+}
+.lt_header a{
+    display: block;
+    color: white;
+    /*多敲 多用心中有图 有改变的样式 */
+    /* flex-basis: 45px; */
+    justify-content: space-between;
+    text-align: center;
+}
+.lt_header h4{
+    color: white;
+    display: 1;
+}
+/* 中间部分 */
+.lt_main{
+    flex: 1;
+    background-color: orange;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 底部部分 */
+.lt_footer{
+    height: 55px;
+    background-color: #00bfff;
+}
+.lt_footer ul{
+    display: flex;
+    height: 100%;
+}
+.lt_footer ul li{
+    flex:1;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.lt_footer ul li a{
+    color: white;
+}
+.lt_footer ul li.active a{
+    color: #ffa500;
+}
+.lt_footer ul li a p{
+    color: white;
+} 
+.lt_footer ul li.active a p{
+    color: #ffa500;
+}
+/* .lt_footer ul li a span{
+    color: white;
+}
+.lt_footer ul li a p{
+    color: white;
+    font-size: 14px;
+} */
