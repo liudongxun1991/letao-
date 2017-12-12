@@ -48,7 +48,7 @@ a{
 /* 中间部分 */
 .lt_main{
     flex: 1;
-    background-color: orange;
+    background-color: pink;
     position: relative;
     overflow: hidden;
 }

@@ -1,0 +1,42 @@
+.lt_container{
+    height: 100%;
+    flex: 1;
+}
+.lt_container .shop-list{
+    background-color: #fff;
+    padding: 10px;
+}
+.lt_container .shop-list .shop-left{
+    padding: 10px;
+    width: 62px;
+}
+.lt_container .shop-list .shop-left img{
+    display: block;
+    width: 42px;
+    height: 42px;
+}
+.lt_container .shop-list .shop-left input{}
+.lt_container .shop-list .shop-right{
+    margin-left: 62px;
+    background-color: yellow;
+}
+.lt_container .shop-list .shop-right p.title{
+
+}
+.lt_container .shop-list .shop-right span.price{
+    color: red;
+    font-size: 12px;
+}
+.lt_container .shop-list .shop-right span.oldPrice{
+    color: gray;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.lt_container .shop-list .shop-right p.num{
+
+}
+.lt_container .shop-list .shop-right p.size{
+    font-size: 16px;
+    color: lightseagreen;
+}
+
