@@ -23,15 +23,14 @@
     border-right-color: transparent;
 }
 .nav_left ul li a{
-    display: block;
     height: 50px;
-    font-size: 18px;
-    text-align: center;
-    color: gray;
+    display: block;
     line-height: 50px;
+    color: gray;
     background-color: hotpink;
-    border-right: 1px solid #000;
     border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    text-align: center;
 }
 .lt_right{
     flex: 1;

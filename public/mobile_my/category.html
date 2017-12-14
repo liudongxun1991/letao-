@@ -28,68 +28,7 @@
         <div class="lt_category">
             <div class="nav_left mui-scroll-wrapper">
                 <!--结构一样直接加内名就好-->
-                <ul class="mui-scroll">
-                    <li class="active">
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">运动馆</a>
-                    </li>
-                </ul>
+                <ul class="mui-scroll"></ul>
             </div>
             <div class="lt_right mui-scroll-wrapper">
                 <!--这里放置真实显示的DOM内容-->
@@ -283,7 +222,30 @@
 
 </html>
 <!-- 引入mui的JS -->
+<!-- zepto -->
+<script src="./lib/zepto/zepto.min.js"></script>
 <script src="lib/mui/js/mui.min.js"></script>
+<!-- 引入模板yinq -->
+<script src="./lib/artTemplate/template.js"></script>
+<script type="text/html" id="leftList">
+    {{each rows}}
+    <li class="active">
+        <a data-id="{{$value.id}}" href="javascript:void(0)">{{$value.categoryName}}
+        </a>
+    </li>
+    {{/each}}
+
+</script>
+<script id="rightList" type="text/html">
+    {{each rows}}
+    <li>
+        <a href="javascript:void(0)">
+            <img src="{{$value.brandLogo}}" alt="">
+            <p>{{$value.brandName}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
 <!-- 引入commonjs -->
 <script src="js/common.js"></script>
 <script src="js/category.js"></script>
