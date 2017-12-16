@@ -79,13 +79,11 @@ a{
 .lt_footer ul li a p{
     color: white;
 } 
-.lt_footer ul li.active a p{
+/* 高亮样式 */
+.lt_footer ul li.active p{
     color: #ffa500;
 }
-/* .lt_footer ul li a span{
-    color: white;
+
+.lt_footer ul li.active p{
+    color: #ffa500;
 }
-.lt_footer ul li a p{
-    color: white;
-    font-size: 14px;
-} */
