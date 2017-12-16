@@ -3,22 +3,29 @@
     flex: 1;
 }
 .lt_container .shop-list{
+    position: relative;
     background-color: #fff;
     padding: 10px;
 }
 .lt_container .shop-list .shop-left{
-    padding: 10px;
+    position: absolute;
+    padding: 20px 10px;
     width: 62px;
+    top: 0px;
+    left: 0px;
 }
 .lt_container .shop-list .shop-left img{
     display: block;
-    width: 42px;
-    height: 42px;
+    width: 55px;
+    height: 55px;
 }
-.lt_container .shop-list .shop-left input{}
+.lt_container .shop-list .shop-left input{
+    font-size: 18px;
+    margin-top: 6px;
+}
 .lt_container .shop-list .shop-right{
     margin-left: 62px;
-    background-color: yellow;
+
 }
 .lt_container .shop-list .shop-right p.title{
 
