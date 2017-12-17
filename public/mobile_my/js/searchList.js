@@ -64,7 +64,7 @@ $(function () {
     // 需求六 点击立即购买 去详情页
     $('.product-list ul').on('click' , 'button' ,function(){
         var id = $(this).attr('data-id');//需要带id 就保存在里面
-        window.location.href = './shoppingCar.html?id='+id;
+        window.location.href = './product.html?id='+id;
         // console.log(id);
     })
 })

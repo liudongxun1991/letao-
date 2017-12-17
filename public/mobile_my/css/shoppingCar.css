@@ -1,49 +1,57 @@
-.lt_container{
-    height: 100%;
-    flex: 1;
+.lt_content{
+    background-color: transparent;
 }
-.lt_container .shop-list{
-    position: relative;
-    background-color: #fff;
+/* 列表的布局 */
+.shop-car-list{}
+.shop-car-list li{}
+.shop-car-list li{}
+.shop-car-list li .left{
     padding: 10px;
 }
-.lt_container .shop-list .shop-left{
-    position: absolute;
-    padding: 20px 10px;
-    width: 62px;
-    top: 0px;
-    left: 0px;
+.shop-car-list li .mui-media-body{
+    font-size:14px;
 }
-.lt_container .shop-list .shop-left img{
-    display: block;
-    width: 55px;
-    height: 55px;
+.shop-car-list li .mui-media-body p{
+    white-space:normal;
 }
-.lt_container .shop-list .shop-left input{
-    font-size: 18px;
-    margin-top: 6px;
+.shop-car-list li .mui-media-body .price-container{
+    padding: 8px 0;
 }
-.lt_container .shop-list .shop-right{
-    margin-left: 62px;
-
+.shop-car-list li .mui-media-body .price-container span{
+    line-height: 21px;
 }
-.lt_container .shop-list .shop-right p.title{
-
+.shop-car-list li .mui-media-body .price-container span.price{
+    color:red;
+    font-size:13px;
 }
-.lt_container .shop-list .shop-right span.price{
-    color: red;
-    font-size: 12px;
-}
-.lt_container .shop-list .shop-right span.oldPrice{
-    color: gray;
+.shop-car-list li .mui-media-body .price-container span.old-price{
+    color:gray;
     text-decoration: line-through;
-    font-size: 12px;
+    font-size:12px;
 }
-.lt_container .shop-list .shop-right p.num{
+.shop-car-list li .mui-media-body .price-container span.num{
+    color:gray;
+}
+.shop-car-list li .mui-media-body p{
+    color:gray;
+}
 
+/* 底部的 总金额 */
+.lt_order_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    box-shadow: 0 0px 2px hotpink;
 }
-.lt_container .shop-list .shop-right p.size{
-    font-size: 16px;
-    color: lightseagreen;
+.lt_order_list p{
+    color:red;
+    font-size:12px;
 }
-
+.lt_order_list p span{}
+.lt_order_list button{
+    border-radius: 0;
+    background-color: red;
+    font-size:12px;
+    border-color: red;
+}
